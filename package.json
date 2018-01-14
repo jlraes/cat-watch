@@ -1,8 +1,8 @@
 {
-  "name": "bear-watch",
+  "name": "cat-watch",
   "version": "1.0.0",
-  "author": "Philippe Ozil",
-  "description": "Demonstration application for the 'Build an Instant Notification App' Trailhead project (an introduction to platform event).",
+  "author": "Takahito Miyamoto",
+  "description": "Heroku demonstration app forked from 'Bear Watch', Philippe Ozil.",
   "license": "see LICENSE file",
   "private": true,
   "main": "server/server.js",
@@ -40,11 +40,11 @@
     "Lightning",
     "SLDS"
   ],
-  "repository": "pozil/bear-watch",
+  "repository": "takahitomiyamoto/cat-watch",
   "bugs": {
-    "url": "https://github.com/pozil/bear-watch/issues"
+    "url": "https://github.com/takahitomiyamoto/cat-watch/issues"
   },
-  "homepage": "https://github.com/pozil/bear-watch",
+  "homepage": "https://github.com/takahitomiyamoto/cat-watch",
   "engines": {
     "node": "6.2.x"
   }

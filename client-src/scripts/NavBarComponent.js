@@ -13,11 +13,11 @@ var NavBar = module.exports = React.createClass({
           <div className="slds-col slds-has-flexi-truncate">
             <div className="slds-media slds-media--center slds-no-space slds-grow">
               <div className="slds-media__figure">
-                <img src="/assets/bear-footprint-32px.png" alt="Bear footprint logo"/>
+                <img src="/assets/cat-footprint-32px.png" alt="Cat footprint logo"/>
               </div>
               <div className="slds-media__body">
-                <p className="slds-page-header__title slds-truncate slds-align-middle" title="Salesforce React Integration">Bear Watch</p>
-                <p className="page-header__info">An application to warn fellow campers about bears.</p>
+                <p className="slds-page-header__title slds-truncate slds-align-middle" title="Salesforce React Integration">Cat Watch</p>
+                <p className="page-header__info">An application to warn fellow visitors about cats.</p>
               </div>
             </div>
           </div>

@@ -162,7 +162,7 @@ app.post('/publish', function(request, response) {
     return;
 
   var apiRequestOptions = sfdc.data.createDataRequest(curSession.sfdcAuth, 'sobjects/Notification__e');
-  apiRequestOptions.body = {"Message__c" : "Watch out, bear spotted!"};
+  apiRequestOptions.body = {"Message__c" : "Watch out, cat spotted!"};
   apiRequestOptions.json = true;
 
   httpClient.post(apiRequestOptions, function (error, payload) {

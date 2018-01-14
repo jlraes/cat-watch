@@ -1,3 +1,8 @@
+# Cat Watch
+
+## About
+Heroku demonstration app forked from [Bear Watch](https://github.com/pozil/bear-watch).
+
 # Bear Watch
 
 ## About
@@ -8,5 +13,5 @@ This application uses the following dependencies (non-exhaustive):
 - [Salesforce Lightning Design System](https://www.lightningdesignsystem.com) (SLDS).
 
 ## Credits
-Background image source: https://w-dog.net<br/>
-Bear footprint image source: http://icons8.com
+- Background image source: https://w-dog.net
+- Bear footprint image source: http://icons8.com

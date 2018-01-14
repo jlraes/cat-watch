@@ -5,7 +5,7 @@ var NotificationPublisher = module.exports = React.createClass({
   getInitialState: function() {
     return {
       isPublishing: false,
-      message: 'Click on the button below if you spot a bear:'
+      message: 'Click on the button below if you spot a cat:'
     };
   },
 
@@ -54,7 +54,7 @@ var NotificationPublisher = module.exports = React.createClass({
                     <svg aria-hidden="true" className="slds-button__icon--stateful slds-button__icon--left">
                       <use xlinkHref="/assets/icons/utility-sprite/svg/symbols.svg#announcement"></use>
                     </svg>
-                    Broadcast bear warning
+                    Broadcast cat warning
                   </button>
                 </div>
               </div>
