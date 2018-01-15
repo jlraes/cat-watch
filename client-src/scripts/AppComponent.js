@@ -37,7 +37,7 @@ var App = module.exports = React.createClass({
         { this.state.user == null ?
           <LoginPanel />
           :
-          <NotificationPublisher/>
+          <NotificationPublisher user={this.state.user} />
         }
         <div className="credits">Image credits: w-dog.net, icons8.com</div>
       </div>

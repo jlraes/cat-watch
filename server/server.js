@@ -5,6 +5,7 @@ var httpClient = require("request"),
   session = require('express-session'),
   pgSession = require('connect-pg-simple')(session),
   SalesforceClient = require('salesforce-node-client');
+  bodyParser = require('body-parser')
 
 // App dependencies
 var config = require('./config');
@@ -45,6 +46,10 @@ app.use(session({
 // Serve HTML pages under root directory
 app.use('/', express.static(path.join(__dirname, '../public')));
 
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
+app.use(bodyParser.json());
 
 /**
 *  Attemps to retrieves the server session.
@@ -162,7 +167,13 @@ app.post('/publish', function(request, response) {
     return;
 
   var apiRequestOptions = sfdc.data.createDataRequest(curSession.sfdcAuth, 'sobjects/Notification__e');
-  apiRequestOptions.body = {"Message__c" : "Watch out, cat spotted!"};
+  response.setHeader('Content-Type', 'text/plain');
+  apiRequestOptions.body = {
+    "Message__c"  : request.body.comment,
+    // TODO: create new fields on salesforce org
+    "Notifier__c" : request.body.notifier,
+    "Email__c"    : request.body.email
+  };
   apiRequestOptions.json = true;
 
   httpClient.post(apiRequestOptions, function (error, payload) {

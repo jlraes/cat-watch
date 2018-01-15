@@ -43,6 +43,12 @@ server/config.js --> config.sfdc --> domain, callbackUrl, consumerKey, consumerS
       }
     };
 
+### create new fields on *Notification__e* in your salesforce org
+| Field Label | API Name    | Data Type |
+| ----------- |------------ | ----------|
+| Email       | Email__c    | Text(255) |
+| Notifier    | Notifier__c | Text(255) |
+
 ### set some value as your secret key
 server/config.js --> config.server --> sessionSecretKey
 

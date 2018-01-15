@@ -6,13 +6,13 @@ html {
 .slds-page-header {
   position: relative;
   z-index: 10000;
-  background-color:rgba(244, 246, 249, 0.3);
+  background-color:rgba(244, 246, 249, 0.5);
   color:#000000;
 }
 
 .slds-box {
-  background-color:rgba(244, 246, 249, 0.3);
-  color:#FFFFFF;
+  background-color:rgba(244, 246, 249, 0.5);
+  color:#000000;
 }
 
 .credits {
@@ -21,4 +21,8 @@ html {
   right: 0;
   padding: 0 5px;
   color: #9faab5;
+}
+
+#comment {
+  width: 100%;
 }
